@@ -12,11 +12,11 @@ header{
 position: relative;
 width: 400px;
 top: 200px;
-left: 405px;
+left: 350px;
 
 }
 
- button {
+.btn {
     --color: rgb(0, 1, 12);
     font-family: inherit;
     display: inline-block;
@@ -33,11 +33,11 @@ left: 405px;
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
-    top: 200px;
-    left: 410px;
+    top: 30px;
+    left: 10px;
    }
    
-   button:before {
+   .btn:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -47,22 +47,28 @@ left: 405px;
     border-radius: 50%;
    }
    
-   button:hover {
+   .btn:hover {
     color: #fff;
    }
    
-   button:before {
+   .btn:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
    }
    
-   button:hover:before {
+   .btn:hover:before {
     top: -30px;
     left: -30px;
    }
    
-   button:active:before {
+   .btn:active:before {
     background: rgb(0, 1, 12);
-    transition: background 0s;
+    transition: 0s;
+   }
+
+   .text{
+      position: relative;
+      top: 370px;
+      left: 630px;
    }

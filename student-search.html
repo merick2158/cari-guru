@@ -10,8 +10,36 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <div class="container"></div>
+    <main style="height: 100%;">
+      <div class="container" style="height: 100%;">
+        <div id="map"></div>
+
+        <div id="floating-panel">
+          <input id="hide-markers" type="button" value="Hide Markers" />
+          <input id="show-markers" type="button" value="Show Markers" />
+          <input id="delete-markers" type="button" value="Delete Markers" />
+        </div>
+        <p>Click on the map to add markers.</p>
+
+        <!-- 
+          The `defer` attribute causes the callback to execute after the full HTML
+          document has been parsed. For non-blocking uses, avoiding race conditions,
+          and consistent behavior across browsers, consider loading using Promises
+          with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+          -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+          defer>
+        </script>
+
+            <a href="./student-order.html" class="fancy" id="orderbutton" href="#">
+                 <span class="top-key"></span>
+                 <span class="text" onclick="gobutton()">Go!</span>
+                 <span class="bottom-key-1"></span>
+              <span class="bottom-key-2"></span>
+            </a>
+
+      </div>
     </main>
     <footer></footer>
     <script src="js/bootstrap.min.js"></script>

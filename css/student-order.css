@@ -135,10 +135,10 @@ header{
    position: relative;
    left: 100px;
    width: 500px;
-   bottom: 100px;
+   bottom: 150px;
 }
   
-  .actv{
+.actv{
     font-size: 30px;
     position: relative;
     top: 280px;

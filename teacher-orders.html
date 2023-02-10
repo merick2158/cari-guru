@@ -10,16 +10,36 @@
   </head>
   <body>
     <header>
-     <strong>Teacher Orders</strong>
+     <strong>CaGur</strong>
     </header>
 
     <main>
+
+      <strong class="actv">Orders</strong>
+
       <div class="container">
+
+        <article class="card">
+          <div class="temporary_text">
+              Place image here
+          </div>
+         <div class="card_content">
+          <span class="card_title">Kratos27</span>
+              <span class="card_subtitle">Teacher.</span>
+              <p class="card_description">
+                Name : Kratos</p>
+                <p class="card_description">
+                  Email : Kratos45@gmail.com</p>
+                  <p class="card_description">
+                    Phone : +62-812-2986-5020</p>
+          </div>
+         </article>
+  
 
       
 
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
+        <div class="accordion active" id="accordionExample">
+          <div class="accordion-item" id="orderscience" id="r">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Science
@@ -28,14 +48,15 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>Science with Udin grade 5 | 10 AM</strong>        
-                  <button type="button" class="btn btn-success">accept</button>
-                  <button type="button" class="btn btn-danger">reject</button>
+                  <button type="button" class="btn btn-success" onclick="acceptscience()">accept</button>
+                  
+                  <button type="button" class="btn btn-danger" onclick="rejectscience()">reject</button>
 
 
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+          <div class="accordion-item" id="ordermath" >
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Math
@@ -44,22 +65,26 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>Math with Budi grade 7 | 5 PM</strong>
-                  <button type="button" class="btn btn-success">accept</button>
-                  <button type="button" class="btn btn-danger">reject</button>
+                  <button type="button" class="btn btn-success" onclick="acceptmath()">accept</button>
+
+                  <button type="button" class="btn btn-danger"  onclick="rejectmath()">reject</button>
+
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
+            <div class="accordion-item" id="orderenglish">
+             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 English
               </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+             </h2>
+             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>English with Jamal grade 8 | 2 PM</strong> 
-                  <button type="button" class="btn btn-success">accept</button>
-                  <button type="button" class="btn btn-danger">reject</button>
+                  <button type="button" class="btn btn-success" onclick="acceptenglish()">accept</button>
+              
+                  <button type="button" class="btn btn-danger"  onclick="rejectenglish()">reject</button>
+       
               </div>
             </div>
           </div>
